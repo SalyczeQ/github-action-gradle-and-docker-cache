@@ -30,6 +30,7 @@ jobs:
           name: Package
           path: build/libs
   push_to_registries:
+    needs: build
     name: Push Docker image to multiple registries
     runs-on: ubuntu-latest
     permissions:
